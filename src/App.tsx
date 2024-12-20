@@ -27,6 +27,8 @@ import Clients from './pages/Clients/Clients';
 import Facebook from './pages/Clients/components/Facebook';
 import Google from './pages/Clients/components/Google';
 import Amazon from './pages/Clients/components/Amazon';
+import Homework13 from './homeworks/Homework13/Homework13';
+
 
 function App() {
   return (
@@ -41,6 +43,7 @@ function App() {
           <Route path="/clients/facebook" element={<Facebook />} />
           <Route path="/clients/google" element={<Google />} />
           <Route path="/clients/amazon" element={<Amazon />} />
+          <Route path='/homeworks/homework13' element={<Homework13 />} />
           <Route path='*' element='Page not found' />
         </Routes>
       </Layout>
