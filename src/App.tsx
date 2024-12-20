@@ -23,6 +23,10 @@ import Users from 'pages/Users/Users';
 // import Consultation04 from './consultations/Consultation04/Consultation04';
 // import Consultation05 from 'consultations/Consultation05/Consultation05';
 
+import Clients from './pages/Clients/Clients';
+import Facebook from './pages/Clients/components/Facebook';
+import Google from './pages/Clients/components/Google';
+import Amazon from './pages/Clients/components/Amazon';
 
 function App() {
   return (
@@ -33,6 +37,10 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/users' element={<Users />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/facebook" element={<Facebook />} />
+          <Route path="/clients/google" element={<Google />} />
+          <Route path="/clients/amazon" element={<Amazon />} />
           <Route path='*' element='Page not found' />
         </Routes>
       </Layout>
